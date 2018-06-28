@@ -1,0 +1,109 @@
+Jun 28 11:37:29  [info] Ignoring exception thrown by nullHandler: 0, 
+
+Jun 28 11:37:29  [info] $backTrace = #0 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Error.php(911): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::nullHandler(Object(PEAR_Error))
+#2 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(931): call_user_func((Array:2), Object(PEAR_Error))
+#3 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(566): PEAR_Error->PEAR_Error("", 0, 16, (Array:2), NULL)
+#4 /app/public/sites/all/modules/contrib/civicrm/packages/Net/Socket.php(156): PEAR->raiseError("", 0)
+#5 /app/public/sites/all/modules/contrib/civicrm/packages/Net/SMTP.php(451): Net_Socket->connect("ssl://smtp.mail.ubc.ca", "465", FALSE, 30, NULL)
+#6 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(372): Net_SMTP->connect(30)
+#7 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(255): Mail_smtp->getSMTPObject()
+#8 /app/public/sites/all/modules/contrib/civicrm/CRM/Admin/Form/Setting/Smtp.php(175): Mail_smtp->send("david.kennedy@ubc.ca", (Array:3), "SMTP settings are correct.")
+#9 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Form.php(345): CRM_Admin_Form_Setting_Smtp->postProcess()
+#10 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/QuickForm/Action/Refresh.php(75): CRM_Core_Form->mainProcess()
+#11 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Controller.php(203): CRM_Core_QuickForm_Action_Refresh->perform(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#12 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Page.php(103): HTML_QuickForm_Controller->handle(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#13 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Controller.php(353): HTML_QuickForm_Page->handle("refresh")
+#14 /app/public/sites/all/modules/contrib/civicrm/CRM/Utils/Wrapper.php(115): CRM_Core_Controller->run()
+#15 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(286): CRM_Utils_Wrapper->run("CRM_Admin_Form_Setting_Smtp", "Outbound Email Settings", NULL)
+#16 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(86): CRM_Core_Invoke::runItem((Array:13))
+#17 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(54): CRM_Core_Invoke::_invoke((Array:4))
+#18 /app/public/sites/all/modules/contrib/civicrm/drupal/civicrm.module(489): CRM_Core_Invoke::invoke((Array:4))
+#19 [internal function](): civicrm_invoke("admin", "setting", "smtp")
+#20 /app/public/includes/menu.inc(527): call_user_func_array("civicrm_invoke", (Array:3))
+#21 /app/public/index.php(33): menu_execute_active_handler()
+#22 {main}
+
+
+Jun 28 11:37:29  [info] Ignoring exception thrown by nullHandler: , Failed to connect socket: 
+
+Jun 28 11:37:29  [info] $backTrace = #0 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Error.php(911): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::nullHandler(Object(PEAR_Error))
+#2 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(931): call_user_func((Array:2), Object(PEAR_Error))
+#3 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(566): PEAR_Error->PEAR_Error("Failed to connect socket: ", NULL, 16, (Array:2), NULL)
+#4 /app/public/sites/all/modules/contrib/civicrm/packages/Net/SMTP.php(454): PEAR->raiseError("Failed to connect socket: ")
+#5 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(372): Net_SMTP->connect(30)
+#6 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(255): Mail_smtp->getSMTPObject()
+#7 /app/public/sites/all/modules/contrib/civicrm/CRM/Admin/Form/Setting/Smtp.php(175): Mail_smtp->send("david.kennedy@ubc.ca", (Array:3), "SMTP settings are correct.")
+#8 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Form.php(345): CRM_Admin_Form_Setting_Smtp->postProcess()
+#9 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/QuickForm/Action/Refresh.php(75): CRM_Core_Form->mainProcess()
+#10 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Controller.php(203): CRM_Core_QuickForm_Action_Refresh->perform(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#11 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Page.php(103): HTML_QuickForm_Controller->handle(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#12 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Controller.php(353): HTML_QuickForm_Page->handle("refresh")
+#13 /app/public/sites/all/modules/contrib/civicrm/CRM/Utils/Wrapper.php(115): CRM_Core_Controller->run()
+#14 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(286): CRM_Utils_Wrapper->run("CRM_Admin_Form_Setting_Smtp", "Outbound Email Settings", NULL)
+#15 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(86): CRM_Core_Invoke::runItem((Array:13))
+#16 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(54): CRM_Core_Invoke::_invoke((Array:4))
+#17 /app/public/sites/all/modules/contrib/civicrm/drupal/civicrm.module(489): CRM_Core_Invoke::invoke((Array:4))
+#18 [internal function](): civicrm_invoke("admin", "setting", "smtp")
+#19 /app/public/includes/menu.inc(527): call_user_func_array("civicrm_invoke", (Array:3))
+#20 /app/public/index.php(33): menu_execute_active_handler()
+#21 {main}
+
+
+Jun 28 11:37:29  [info] Ignoring exception thrown by nullHandler: 10001, Failed to connect to ssl://smtp.mail.ubc.ca:465 [SMTP: Failed to connect socket:  (code: -1, response: )]
+
+Jun 28 11:37:29  [info] $backTrace = #0 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Error.php(911): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::nullHandler(Object(PEAR_Error))
+#2 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(931): call_user_func((Array:2), Object(PEAR_Error))
+#3 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(566): PEAR_Error->PEAR_Error("Failed to connect to ssl://smtp.mail.ubc.ca:465 [SMTP: Failed to connect sock...", 10001, 16, (Array:2), NULL)
+#4 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(376): PEAR->raiseError("Failed to connect to ssl://smtp.mail.ubc.ca:465 [SMTP: Failed to connect sock...", 10001)
+#5 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(255): Mail_smtp->getSMTPObject()
+#6 /app/public/sites/all/modules/contrib/civicrm/CRM/Admin/Form/Setting/Smtp.php(175): Mail_smtp->send("david.kennedy@ubc.ca", (Array:3), "SMTP settings are correct.")
+#7 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Form.php(345): CRM_Admin_Form_Setting_Smtp->postProcess()
+#8 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/QuickForm/Action/Refresh.php(75): CRM_Core_Form->mainProcess()
+#9 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Controller.php(203): CRM_Core_QuickForm_Action_Refresh->perform(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#10 /app/public/sites/all/modules/contrib/civicrm/packages/HTML/QuickForm/Page.php(103): HTML_QuickForm_Controller->handle(Object(CRM_Admin_Form_Setting_Smtp), "refresh")
+#11 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Controller.php(353): HTML_QuickForm_Page->handle("refresh")
+#12 /app/public/sites/all/modules/contrib/civicrm/CRM/Utils/Wrapper.php(115): CRM_Core_Controller->run()
+#13 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(286): CRM_Utils_Wrapper->run("CRM_Admin_Form_Setting_Smtp", "Outbound Email Settings", NULL)
+#14 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(86): CRM_Core_Invoke::runItem((Array:13))
+#15 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Invoke.php(54): CRM_Core_Invoke::_invoke((Array:4))
+#16 /app/public/sites/all/modules/contrib/civicrm/drupal/civicrm.module(489): CRM_Core_Invoke::invoke((Array:4))
+#17 [internal function](): civicrm_invoke("admin", "setting", "smtp")
+#18 /app/public/includes/menu.inc(527): call_user_func_array("civicrm_invoke", (Array:3))
+#19 /app/public/index.php(33): menu_execute_active_handler()
+#20 {main}
+
+
+Jun 28 11:37:29  [info] $Fatal Error Details = Array
+(
+    [callback] => Array
+        (
+            [0] => CRM_Core_Error
+            [1] => handle
+        )
+
+    [code] => 
+    [message] => not connected
+    [mode] => 16
+    [debug_info] => 
+    [type] => PEAR_Error
+    [user_info] => 
+    [to_string] => [pear_error: message="not connected" code=0 mode=callback callback=CRM_Core_Error::handle prefix="" info=""]
+)
+
+
+Jun 28 11:37:29  [info] $backTrace = #0 /app/public/sites/all/modules/contrib/civicrm/CRM/Core/Error.php(235): CRM_Core_Error::backtrace("backTrace", TRUE)
+#1 [internal function](): CRM_Core_Error::handle(Object(PEAR_Error))
+#2 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(931): call_user_func((Array:2), Object(PEAR_Error))
+#3 /app/public/sites/all/modules/contrib/civicrm/packages/PEAR.php(566): PEAR_Error->PEAR_Error("not connected", NULL, 16, (Array:2), NULL)
+#4 /app/public/sites/all/modules/contrib/civicrm/packages/Net/Socket.php(327): PEAR->raiseError("not connected")
+#5 /app/public/sites/all/modules/contrib/civicrm/packages/Net/SMTP.php(264): Net_Socket->write("QUIT\r\n")
+#6 /app/public/sites/all/modules/contrib/civicrm/packages/Net/SMTP.php(302): Net_SMTP->_send("QUIT\r\n")
+#7 /app/public/sites/all/modules/contrib/civicrm/packages/Net/SMTP.php(493): Net_SMTP->_put("QUIT")
+#8 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(421): Net_SMTP->disconnect()
+#9 /app/public/sites/all/modules/contrib/civicrm/packages/Mail/smtp.php(218): Mail_smtp->disconnect()
+#10 [internal function](): Mail_smtp->_Mail_smtp()
+#11 {main}
+
