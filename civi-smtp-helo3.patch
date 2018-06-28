@@ -1,0 +1,13 @@
+diff --git a/packages/Mail/smtpmx.php b/packages/Mail/smtpmx.php
+index f0b6940..ff88b19 100644
+--- a/packages/Mail/smtpmx.php
++++ b/packages/Mail/smtpmx.php
+@@ -82,7 +82,7 @@ class Mail_smtpmx extends Mail {
+      * @var string
+      * @see posix_uname()
+      */
+-    var $mailname = 'localhost';
++    var $mailname = 'mail.ubc.ca';
+ 
+     /**
+      * SMTP connection timeout value.  NULL indicates no timeout.
