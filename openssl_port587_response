@@ -1,0 +1,27 @@
+web@r7xyylyd3b2o7u3xfa3l4sa6xu: $ openssl s_client -connect smtp.mail.ubc.ca:587
+CONNECTED(00000003)
+140011969320592:error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol:s23_clnt.c:782:
+---
+no peer certificate available
+---
+No client certificate CA names sent
+---
+SSL handshake has read 7 bytes and written 289 bytes
+---
+New, (NONE), Cipher is (NONE)
+Secure Renegotiation IS NOT supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : 0000
+    Session-ID: 
+    Session-ID-ctx: 
+    Master-Key: 
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1531417320
+    Timeout   : 300 (sec)
+    Verify return code: 0 (ok)

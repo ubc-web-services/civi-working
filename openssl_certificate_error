@@ -1,0 +1,79 @@
+web@r7xyylyd3b2o7u3xfa3l4sa6xu: $ openssl s_client -connect smtp.mail.ubc.ca:465
+
+CONNECTED(00000003)
+depth=0 C = CA, ST = British Columbia, L = Vancouver, O = The University of British Columbia, CN = rpc.mail.ubc.ca
+verify error:num=20:unable to get local issuer certificate
+verify return:1
+depth=0 C = CA, ST = British Columbia, L = Vancouver, O = The University of British Columbia, CN = rpc.mail.ubc.ca
+verify error:num=27:certificate not trusted
+verify return:1
+depth=0 C = CA, ST = British Columbia, L = Vancouver, O = The University of British Columbia, CN = rpc.mail.ubc.ca
+verify error:num=21:unable to verify the first certificate
+verify return:1
+---
+Certificate chain
+ 0 s:/C=CA/ST=British Columbia/L=Vancouver/O=The University of British Columbia/CN=rpc.mail.ubc.ca
+   i:/C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2012 Entrust, Inc. - for authorized use only/CN=Entrust Certification Authority - L1K
+---
+Server certificate
+-----BEGIN CERTIFICATE-----
+MIIF4DCCBMigAwIBAgIQWBY0oheNqSkAAAAAUNqswTANBgkqhkiG9w0BAQsFADCB
+ujELMAkGA1UEBhMCVVMxFjAUBgNVBAoTDUVudHJ1c3QsIEluYy4xKDAmBgNVBAsT
+H1NlZSB3d3cuZW50cnVzdC5uZXQvbGVnYWwtdGVybXMxOTA3BgNVBAsTMChjKSAy
+MDEyIEVudHJ1c3QsIEluYy4gLSBmb3IgYXV0aG9yaXplZCB1c2Ugb25seTEuMCwG
+A1UEAxMlRW50cnVzdCBDZXJ0aWZpY2F0aW9uIEF1dGhvcml0eSAtIEwxSzAeFw0x
+NjEyMDYxNzE4MDlaFw0yMDAzMDUxNzQ4MDhaMIGDMQswCQYDVQQGEwJDQTEZMBcG
+A1UECBMQQnJpdGlzaCBDb2x1bWJpYTESMBAGA1UEBxMJVmFuY291dmVyMSswKQYD
+VQQKEyJUaGUgVW5pdmVyc2l0eSBvZiBCcml0aXNoIENvbHVtYmlhMRgwFgYDVQQD
+Ew9ycGMubWFpbC51YmMuY2EwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB
+AQCsGRkTQfS5zN0+N+y8zHyyV+aPE0LcH+/gegvXVWODcRI8Lp6L3mAEPJIJ3KfE
+XSj0G2QsTmjp72cdhjNCyeNhaQsaYvbo6vL/uM3v7i3u/ufGMVs5FoCNI0gf27w3
+WIHfci39dB+0jWYOWzy8u1Bsmwyltys3Bze6TIblQUHBtu1pFM2e4o+EtB261uJv
+lnznQWeEN6qf1R9XXu6yO1TjeL+n6whJJnqW/0x5ERpPhrCZYGG5w37H+e8ZKMj8
+wjwR/KeiWAs/ixK0ina97dmDKR3jex81UB+6TTBxP9QtJHiplkBpjhZYt7t+QIwk
+QxYk5FY87Cp7wmRbQQCRPLzxAgMBAAGjggIVMIICETAOBgNVHQ8BAf8EBAMCBaAw
+EwYDVR0lBAwwCgYIKwYBBQUHAwEwMwYDVR0fBCwwKjAooCagJIYiaHR0cDovL2Ny
+bC5lbnRydXN0Lm5ldC9sZXZlbDFrLmNybDBLBgNVHSAERDBCMDYGCmCGSAGG+mwK
+AQUwKDAmBggrBgEFBQcCARYaaHR0cDovL3d3dy5lbnRydXN0Lm5ldC9ycGEwCAYG
+Z4EMAQICMGgGCCsGAQUFBwEBBFwwWjAjBggrBgEFBQcwAYYXaHR0cDovL29jc3Au
+ZW50cnVzdC5uZXQwMwYIKwYBBQUHMAKGJ2h0dHA6Ly9haWEuZW50cnVzdC5uZXQv
+bDFrLWNoYWluMjU2LmNlcjCBsgYDVR0RBIGqMIGngg9ycGMubWFpbC51YmMuY2GC
+EGltYXAubWFpbC51YmMuY2GCD3BvcC5tYWlsLnViYy5jYYIQc210cC5tYWlsLnVi
+Yy5jYYIPd2ViLm1haWwudWJjLmNhggttYWlsLnViYy5jYYIYYXV0b2Rpc2NvdmVy
+Lm1haWwudWJjLmNhgg93d3cubWFpbC51YmMuY2GCFmFjdGl2ZXN5bmMubWFpbC51
+YmMuY2EwHwYDVR0jBBgwFoAUgqJwdN28Uz/Pe9T3zX+nYMYKTL8wHQYDVR0OBBYE
+FO7bRRW2PdpX9pcjnT19564JRw4QMAkGA1UdEwQCMAAwDQYJKoZIhvcNAQELBQAD
+ggEBAMyRq2BCs90ktcAPivU9B+1X/X3Sh66Nzk/ltHgcxtHVxp1iDcW/mKcHQ5Xm
++gOEuIMT67EkH6wBNFIwe+b96j3rFaFq3QLctEqVdFt5ITH1SMBzZZF2GkzmlQOE
+koqszgJUccFGRCKLHa1ThAlVzQZVonAwzMD1MkuIY4xvtviuYWfOt2teBDPWgRxS
+Ay3psaLkTrB01DPLcR2fiUMOfBwjTU1TugkE9cZF1UVNypQMzrFBYowMDJLzOwm7
+LgLCMkLYvw75wrFqJnTaMKx4SIvzbH1UxXwyXtdC+6wMyuJbReoq9TgnpYo7XsQm
+j2jBN+mh8bttIlP09COs0s+Rfo0=
+-----END CERTIFICATE-----
+subject=/C=CA/ST=British Columbia/L=Vancouver/O=The University of British Columbia/CN=rpc.mail.ubc.ca
+issuer=/C=US/O=Entrust, Inc./OU=See www.entrust.net/legal-terms/OU=(c) 2012 Entrust, Inc. - for authorized use only/CN=Entrust Certification Authority - L1K
+---
+No client certificate CA names sent
+---
+SSL handshake has read 2045 bytes and written 447 bytes
+---
+New, TLSv1/SSLv3, Cipher is ECDHE-RSA-AES256-GCM-SHA384
+Server public key is 2048 bit
+Secure Renegotiation IS supported
+Compression: NONE
+Expansion: NONE
+SSL-Session:
+    Protocol  : TLSv1.2
+    Cipher    : ECDHE-RSA-AES256-GCM-SHA384
+    Session-ID: F08FA3992432F6DD9816CC5E4D3B5E254D525ADE87B3659C0BB81DAA9C4B2EB5
+    Session-ID-ctx: 
+    Master-Key: 9612A6C71C940597EEFEE38E9CF7E5EAD3114466E93668766DE08BF99A67A168E249904BA9A648F642E97BE1A36E9E96
+    Key-Arg   : None
+    PSK identity: None
+    PSK identity hint: None
+    SRP username: None
+    Start Time: 1531417083
+    Timeout   : 300 (sec)
+    Verify return code: 21 (unable to verify the first certificate)
+---
+220 smtp.mail.ubc.ca Microsoft ESMTP MAIL Service ready at Thu, 12 Jul 2018 10:37:22 -0700
